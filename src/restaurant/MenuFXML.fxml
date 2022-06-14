@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurant.MenuFXMLController">
+   <children>
+      <GridPane hgap="26.0" layoutX="20.0" layoutY="12.0" prefHeight="605.0" prefWidth="814.0" vgap="20.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="188.0" minHeight="150.6666717529297" prefHeight="184.0" />
+          <RowConstraints maxHeight="202.3333282470703" minHeight="10.0" prefHeight="169.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="124.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@images/pizza.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Button fx:id="addPi" mnemonicParsing="false" onAction="#handleAction" prefHeight="53.0" prefWidth="48.0" text="+" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="80.0" />
+               </GridPane.margin>
+            </Button>
+            <Label text="            Pizza : 1000 Rs" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="quantityPi" text="Quantity: 0" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="33.0" top="50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="124.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/burger.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Button fx:id="addB" mnemonicParsing="false" onAction="#handleAction" prefHeight="50.0" prefWidth="50.0" text="+" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets bottom="80.0" />
+               </GridPane.margin></Button>
+            <Label text="            Burger : 100 Rs" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="quantityB" text="Quantity: 0" GridPane.halignment="RIGHT">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="33.0" top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <ImageView fitHeight="124.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@images/fries.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@images/Spaghetti.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@images/pasta.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@images/karahi.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Label text="            Fries : 70 Rs" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="            Spaghetti : 130 Rs" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="            Pasta : 300 Rs" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="            Karahi : 900 Rs" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="addF" mnemonicParsing="false" onAction="#handleAction" prefHeight="50.0" prefWidth="48.0" text="+" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets bottom="80.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="addS" mnemonicParsing="false" onAction="#handleAction" prefHeight="51.0" prefWidth="51.0" text="+" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="80.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="addPa" mnemonicParsing="false" onAction="#handleAction" prefHeight="53.0" prefWidth="50.0" text="+" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="80.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="addK" mnemonicParsing="false" onAction="#handleAction" prefHeight="52.0" prefWidth="47.0" text="+" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="80.0" />
+               </GridPane.margin>
+            </Button>
+            <Label fx:id="quantityF" text="Quantity: 0" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="33.0" top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="quantityS" text="Quantity: 0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="33.0" top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="quantityPa" text="Quantity: 0" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="33.0" top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="quantityK" text="Quantity: 0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="33.0" top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="rB" mnemonicParsing="false" onAction="#handleAction" prefHeight="50.0" prefWidth="50.0" text="−" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets bottom="80.0" right="60.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="rPi" mnemonicParsing="false" onAction="#handleAction" prefHeight="50.0" prefWidth="50.0" text="−" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="80.0" right="60.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="rF" mnemonicParsing="false" onAction="#handleAction" prefHeight="50.0" prefWidth="50.0" text="−" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets bottom="80.0" right="60.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="rPa" mnemonicParsing="false" onAction="#handleAction" prefHeight="50.0" prefWidth="50.0" text="−" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="80.0" right="60.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="rS" mnemonicParsing="false" onAction="#handleAction" prefHeight="50.0" prefWidth="50.0" text="−" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="80.0" right="60.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="rK" mnemonicParsing="false" onAction="#handleAction" prefHeight="50.0" prefWidth="50.0" text="−" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="80.0" right="60.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
